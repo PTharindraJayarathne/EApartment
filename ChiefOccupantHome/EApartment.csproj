@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68A70439-A82E-4D6E-9D53-FD0530F9A345}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChiefOccupantHome</RootNamespace>
+    <AssemblyName>ChiefOccupantHome</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Data.Services.Design" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminApartmentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminApartmentUC.Designer.cs">
+      <DependentUpon>AdminApartmentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminApplicantUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminApplicantUC.Designer.cs">
+      <DependentUpon>AdminApplicantUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChiefOccupantUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminChiefOccupantUC.Designer.cs">
+      <DependentUpon>AdminChiefOccupantUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDependentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDependentUC.Designer.cs">
+      <DependentUpon>AdminDependentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminHomeUC.Designer.cs">
+      <DependentUpon>AdminHomeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLeaseAgreementUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLeaseAgreementUC.Designer.cs">
+      <DependentUpon>AdminLeaseAgreementUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLeaseExpansionRequestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLeaseExpansionRequestUC.Designer.cs">
+      <DependentUpon>AdminLeaseExpansionRequestUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLeaseRequestAcceptanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLeaseRequestAcceptanceUC.Designer.cs">
+      <DependentUpon>AdminLeaseRequestAcceptanceUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLoginUC.Designer.cs">
+      <DependentUpon>AdminLoginUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminParkingAndBuildingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminParkingAndBuildingsUC.Designer.cs">
+      <DependentUpon>AdminParkingAndBuildingsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaymentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPaymentUC.Designer.cs">
+      <DependentUpon>AdminPaymentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRealParkingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminRealParkingUC.Designer.cs">
+      <DependentUpon>AdminRealParkingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRoleUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminRoleUC.Designer.cs">
+      <DependentUpon>AdminRoleUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminStaffUC.Designer.cs">
+      <DependentUpon>AdminStaffUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApartmentUC.Designer.cs">
+      <DependentUpon>ApartmentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminApplicantAcceptanceUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminApplicantAcceptanceUC.Designer.cs">
+      <DependentUpon>AdminApplicantAcceptanceUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiefOccupant.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="EApartmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EApartmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminDashboard.Designer.cs">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerHome.Designer.cs">
+      <DependentUpon>frmCustomerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DependentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DependentUC.Designer.cs">
+      <DependentUpon>DependentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerLeaseExtensionRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerLeaseExtensionRequest.Designer.cs">
+      <DependentUpon>frmCustomerLeaseExtensionRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaseAgreementUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeaseAgreementUC.Designer.cs">
+      <DependentUpon>LeaseAgreementUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonalUC.Designer.cs">
+      <DependentUpon>PersonalUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminApartmentUC.resx">
+      <DependentUpon>AdminApartmentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminApplicantUC.resx">
+      <DependentUpon>AdminApplicantUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminChiefOccupantUC.resx">
+      <DependentUpon>AdminChiefOccupantUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDependentUC.resx">
+      <DependentUpon>AdminDependentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomeUC.resx">
+      <DependentUpon>AdminHomeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLeaseAgreementUC.resx">
+      <DependentUpon>AdminLeaseAgreementUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLeaseExpansionRequestUC.resx">
+      <DependentUpon>AdminLeaseExpansionRequestUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLeaseRequestAcceptanceUC.resx">
+      <DependentUpon>AdminLeaseRequestAcceptanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginUC.resx">
+      <DependentUpon>AdminLoginUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminParkingAndBuildingsUC.resx">
+      <DependentUpon>AdminParkingAndBuildingsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaymentUC.resx">
+      <DependentUpon>AdminPaymentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRealParkingUC.resx">
+      <DependentUpon>AdminRealParkingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRoleUC.resx">
+      <DependentUpon>AdminRoleUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminStaffUC.resx">
+      <DependentUpon>AdminStaffUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApartmentUC.resx">
+      <DependentUpon>ApartmentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminApplicantAcceptanceUC.resx">
+      <DependentUpon>AdminApplicantAcceptanceUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminDashboard.resx">
+      <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerHome.resx">
+      <DependentUpon>frmCustomerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DependentUC.resx">
+      <DependentUpon>DependentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerLeaseExtensionRequest.resx">
+      <DependentUpon>frmCustomerLeaseExtensionRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaseAgreementUC.resx">
+      <DependentUpon>LeaseAgreementUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalUC.resx">
+      <DependentUpon>PersonalUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="EApartmentDataSet.xsc">
+      <DependentUpon>EApartmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EApartmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EApartmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EApartmentDataSet.xss">
+      <DependentUpon>EApartmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulding icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eed37021bf5af8c12fbfac8d31c427d3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115-1153942_white-home-icon-png-white-home-logo-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115-1153942_white-home-icon-png-white-home-logo-transparent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b767e582246c1fefac4d064d8b240517.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3a4684bd4a8f0b6e925cc2679f941f5a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personalIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dependentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applicanticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerIcon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerIcon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dependentIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contractIcon7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymenticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmenticon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property icon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applicanticon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roleicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sloginicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stafficon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stafficon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkingicon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
